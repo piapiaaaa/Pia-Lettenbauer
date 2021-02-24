@@ -3,17 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <!--To make sure it scales corretly also on mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
+  <!--Remove all styles-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Pia Lettenbauer UX/UI Designer Cape Town</title>
+  <!--Fonts selection-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <title>About Pia Lettenbauer UX design</title>
 </head>
 
 <body>
-  <header>
-    <div>
+  <header id="menu">
+    <div class="container">
       <a href="index.html">Pia Lettenbauer</a>
       <nav>
-        <ul>
+        <ul class="megamenu">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -23,8 +30,8 @@
   </header>
   <main>
     <!--Hero Section-->
-    <div>
-      <div>
+    <div id="intro">
+      <div class="container">
         <h1>Hi! My name is Pia.
           <span>I’m a UX/UI Designer, with a background in graphic design.</span>
         </h1>
@@ -32,15 +39,14 @@
       </div>
     </div>
 
-    <div>
-      <div>
+    <div id="mywork">
+      <div class="container">
         <h2>My Work</h2>
         <!--Project 1 Expat Experts-->
-        <div>
-          <div>
+        <div class="project">
+          <div class="container_project">
             <picture>
               <source srcset="img/experts/Expat600.jpg" media="(max-width:767px)">
-                <a href="expert.html">
               <img src="img/experts/Expat1200.jpg" alt="Expat Experts">
             </picture>
           </div>
@@ -50,13 +56,13 @@
               Expat Experts is a responsive web app that offers professional help with the process of moving abroad and settling in to a new country.
             </p>
             <!--Update link when ready-->
-            <a href="expert.html">Read more</a>
+            <a href="expert.html" class="button">Read more</a>
           </div>
         </div>
 
         <!--Project 1 Chatter-->
-        <div>
-          <div>
+        <div class="project">
+          <div class="container_project">
             <picture>
               <source srcset="img/chatter/Chatter600.jpg" media="(max-width:767px)">
               <img src="img/chatter/Chatter1200.jpg" alt="Chatter">
@@ -68,7 +74,7 @@
               A vocabulary app to help you learn a new language in an easy, fun and quick way.
             </p>
             <!--Update link when ready-->
-            <a href="">Read more</a>
+            <a href="" class="button">Read more</a>
           </div>
         </div>
 
@@ -81,13 +87,13 @@
 
   <!--Footer-->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Contact Info</h2>
       <p>
         To get in touch, please call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:pialett">pialett</a>. Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:pia.lettenbauer@gmail.com">Email me</a>
+        <a href="mailto:pia.lettenbauer@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/pialettenbauer/" target="_blank">
@@ -111,7 +117,8 @@
               fill="#1da1f2" fill-rule="nonzero" />
           </svg>
         </a>
-      </div> <p>© Pia Lettenbauer 2021</p>
+      </div>
+      <p>© Pia Lettenbauer 2021</p>
     </div>
   </footer>
 </body>

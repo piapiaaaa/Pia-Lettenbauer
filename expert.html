@@ -3,17 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <!--To make sure it scales corretly also on mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
+  <!--Remove all styles-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Pia Lettenbauer UX/UI Designer Cape Town</title>
+  <!--Fonts selection-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <title>About Pia Lettenbauer UX design</title>
 </head>
 
 <body>
-  <header>
-    <div>
+  <header id="menu">
+    <div class="container">
       <a href="index.html">Pia Lettenbauer</a>
       <nav>
-        <ul>
+        <ul class="megamenu">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,19 +29,19 @@
     </div>
   </header>
   <main>
-    
+
     <!--Project-->
-    <div>
+    <div id="fullProject">
       <div>
         <h1>Expat Experts</h1>
         <picture>
-          <source srcset="img/experts/Expat600.jpg" media="(max-width:767px)" />
-          <img src="img/experts/Expat1200.jpg" alt="Expat Experts" />
+          <source srcset="img/experts/Expat600.jpg" media="(max-width:767px)">
+          <img src="img/experts/Expat1200.jpg" alt="Expat Experts">
         </picture>
       </div>
     </div>
     <!--About-->
-    <div>
+    <div class="project_section">
       <div>
         <h2>About</h2>
         <p>As part of the CareerFoundry UX Design course, I chose to create a spacialist advisory app: Expat Experts, a responsive web app that follows the mobile-first approach.</p>
@@ -54,56 +61,56 @@
           Usability Hub, Google Forms</p>
         <h3>Design Process</h3>
         <p>The methodology used for the development of the application was the Double Diamond Strategy. It focuses on breaking up the design process into four stages: Discover, Define, Develop & Deliver.</p>
-        <img src="img/experts/doublediamond.svg" alt="Double Diamond" />
+        <img src="img/experts/doublediamond.svg" alt="Double Diamond">
       </div>
     </div>
 
     <!--Discover-->
-    <div>
+    <div class="project_section">
       <div>
         <h2>Discover</h2>
         <h3>Competitor Analysis</h3>
         <p>In order for me to recognize and understand competitors and the market, I conducted a competitor analysis. I couldn’t find a product that was specifically providing expert advice for expats, however I did find two that offer general
           expert advice “Sterkla” and “Oncall”. During my analysis, I gained valuable insights regarding user needs, feelings and frustrations, which helped me to define better what was useful to design.</p>
         <picture>
-          <source srcset="img/experts/competitor_small.jpg" media="(max-width:767px)" />
-          <img src="img/experts/competitor_big.jpg" alt="Competitor" />
+          <source srcset="img/experts/competitor_small.jpg" media="(max-width:767px)">
+          <img src="img/experts/competitor_big.jpg" alt="Competitor">
         </picture>
       </div>
     </div>
 
     <!--Define-->
-    <div>
+    <div class="project_section">
       <div>
-        <h2>Define<h2>
-            <h4>User Persona</h4>
+        <h2>Define</h2>
+            <h3>User Persona</h3>
             <p>Based on my research and data findings I developed three personas, to better understand and empathize with the users needs, motivations and frustrations.</p>
             <picture>
-              <source srcset="img/experts/persona_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/persona_big.jpg" alt="Persona" />
+              <source srcset="img/experts/persona_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/persona_big.jpg" alt="Persona">
             </picture>
-            <h4>Informational Architecture</h4>
+            <h3>Informational Architecture</h3>
             <p>In the next step I developed a first attempt of the sitemap, based on all insights collected from my research. However, to validate the sitemap, I conducted a card sorting exercise with 9 participants. The results showed me that the
               participants had a general understanding of the pages and only minimal changes were made.</p>
             <picture>
-              <source srcset="img/experts/sitemap_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/sitemap_big.jpg" alt="Sitemap" />
+              <source srcset="img/experts/sitemap_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/sitemap_big.jpg" alt="Sitemap">
             </picture>
       </div>
     </div>
 
     <!--Design-->
-    <div>
+    <div class="project_section">
       <div>
-        <h2>Design<h2>
-            <h4>Low, Mid & High-Fidelity Prototypes</h4>
+        <h2>Design</h2>
+            <h3>Low, Mid & High-Fidelity Prototypes</h3>
             <p>I developed a Minimum Viable Product with paper prototyping, which meant I could iterate quickly and test the UX of a product without having spent too much time on development costs. This journey between lo-fidelity to hi-fidelity gave
               me time to identify pain points along the user journey before moving to the next stage.</p>
             <picture>
-              <source srcset="img/experts/prototypes_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/prototypes_big.jpg" alt="Prototypes" />
+              <source srcset="img/experts/prototypes_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/prototypes_big.jpg" alt="Prototypes">
             </picture>
-            <h4>Usability Testing</h4>
+            <h3>Usability Testing</h3>
             <p>Next, I started with the first round of usability testing. The goal was to evaluate the learnability of the application’s functionality among the first time users on the mobile version. As well as to observe and measure how the users
               interact with the sign up and onboarding, general navigation through the app and how they will interact with the main features:
               a) Book a call with an expert<br>
@@ -112,29 +119,29 @@
               I conducted two moderated in-person and four moderated remote usabilty tests in total. All sessions were recorded and lasted between 30-40 min. <br>
               In order, to analyze all the finding I gathered from users during the usability tests, I first created an Affinity Map. To classify the found usability problems and to give recommendations for future iterations I then sorted them with
               the help of the Rainbow Spreadsheet.</p>
-            <img src="img/experts/rainbowsheet.svg" alt="Rainbow Sheet" />
-            <h4>Iterations</h4>
+            <img src="img/experts/rainbowsheet.svg" alt="Rainbow Sheet">
+            <h3>Iterations</h3>
             <picture>
-              <source srcset="img/experts/iterations_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/iterations_big.jpg" alt="Iterations" />
+              <source srcset="img/experts/iterations_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/iterations_big.jpg" alt="Iterations">
             </picture>
-            <h4>A&B Testing</h4>
+            <h3>A&B Testing</h3>
             <picture>
-              <source srcset="img/experts/ab_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/ab_big.jpg" alt="AB" />
+              <source srcset="img/experts/ab_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/ab_big.jpg" alt="AB">
             </picture>
       </div>
     </div>
 
     <!--Deliver-->
-    <div>
+    <div class="project_section">
       <div>
-        <h2>Deliver<h2>
-            <h4>Style Guide</h4>
+        <h2>Deliver</h2>
+            <h3>Style Guide</h3>
             <p>Now it was time to put together the style guide, to be used as reference for all devices.</p>
             <picture>
-              <source srcset="img/experts/styleguide_small.jpg" media="(max-width:767px)" />
-              <img src="img/experts/styleguide_big.jpg" alt="styleguide" />
+              <source srcset="img/experts/styleguide_small.jpg" media="(max-width:767px)">
+              <img src="img/experts/styleguide_big.jpg" alt="styleguide">
             </picture>
             <a href="https://xd.adobe.com/view/bd0ebdb1-6644-4951-a3f8-557d0981df60-e85d/">Click here for the final prototype</a>
       </div>
@@ -143,13 +150,13 @@
 
   <!--Footer-->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Contact Info</h2>
       <p>
         To get in touch, please call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:pialett">pialett</a>. Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:pia.lettenbauer@gmail.com">Email me</a>
+        <a href="mailto:pia.lettenbauer@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/pialettenbauer/" target="_blank">

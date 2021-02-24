@@ -3,17 +3,24 @@
 
 <head>
   <meta charset="utf-8">
+  <!--To make sure it scales corretly also on mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="img/favicon.ico" rel="shortcut icon">
+  <!--Remove all styles-->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--Fonts selection-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <title>About Pia Lettenbauer UX design</title>
 </head>
 
 <body>
-  <header>
-    <div>
+  <header id="menu">
+    <div class="container">
       <a href="index.html">Pia Lettenbauer</a>
       <nav>
-        <ul>
+        <ul class="megamenu">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -22,8 +29,9 @@
     </div>
   </header>
   <main>
+
     <!--Section Title-->
-    <div>
+    <div id="about">
       <div>
         <h1>About</h1>
       </div>
@@ -32,8 +40,8 @@
     <div>
       <div>
         <picture>
-          <source srcset="img/about/pia_small.jpg" media="(max-width:767px)" />
-          <img src="img/about/pia_large.jpg" alt="My Image" />
+          <source srcset="img/about/pia_small.jpg" media="(max-width:767px)">
+          <img src="img/about/pia_large.jpg" alt="My Image">
         </picture>
         <div>
           <!--Bio-->
@@ -52,44 +60,44 @@
           <div>
             <h2>Skills and Tools</h2>
             <div>
-              <h3>Skills></h3>
+              <h3>Skills</h3>
               <div>
-              <ul>
-                <li>Low to High Fidelity Prototyping</li>
-                <li>Storyboarding</li>
-                <li>Wireframing</li>
-                <li>User Research</li>
-                <li>Usability Testing</li>
-                <li>Web Design</li>
-                <li>Print Design</li>
-              </ul>
-            </div>
-            <div>
-              <h3>Tools</h3>
-              <ul>
-                <li>Adobe XD</li>
-                <li>Sketch</li>
-                <li>Adobe Creative Suite</li>
-                <li>HTML, CSS, Javascript</li>
-                <li>Microsoft Office</li>
-                <li>Miro</li>
-              </ul>
+                <ul>
+                  <li>Low to High Fidelity Prototyping</li>
+                  <li>Storyboarding</li>
+                  <li>Wireframing</li>
+                  <li>User Research</li>
+                  <li>Usability Testing</li>
+                  <li>Web Design</li>
+                  <li>Print Design</li>
+                </ul>
+              </div>
+              <div>
+                <h3>Tools</h3>
+                <ul>
+                  <li>Adobe XD</li>
+                  <li>Sketch</li>
+                  <li>Adobe Creative Suite</li>
+                  <li>HTML, CSS, Javascript</li>
+                  <li>Microsoft Office</li>
+                  <li>Miro</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </main>
 
   <!--Footer-->
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Contact Info</h2>
       <p>
         To get in touch, please call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:pialett">pialett</a>. Prefer sending an email?
       </p>
       <div>
-        <a href="mailto:pia.lettenbauer@gmail.com">Email me</a>
+        <a href="mailto:pia.lettenbauer@gmail.com" class="button contact">Email me</a>
       </div>
       <div>
         <a href="https://www.linkedin.com/in/pialettenbauer/" target="_blank">
@@ -113,7 +121,8 @@
               fill="#1da1f2" fill-rule="nonzero" />
           </svg>
         </a>
-      </div> <p>© Pia Lettenbauer 2021</p>
+      </div>
+      <p>© Pia Lettenbauer 2021</p>
     </div>
   </footer>
 </body>
