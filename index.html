@@ -16,11 +16,11 @@
 </head>
 
 <body>
-  <header id="menu">
+  <header>
     <div class="container">
-      <a href="index.html">Pia Lettenbauer</a>
+      <a href="index.html" class="logo">Pia Lettenbauer</a>
       <nav>
-        <ul class="megamenu">
+        <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -30,45 +30,44 @@
   </header>
   <main>
     <!--Hero Section-->
-    <div id="intro">
+    <div class="section" id="hero">
       <div class="container">
-        <h1>Hi! My name is Pia.
-          <span>I’m a UX/UI Designer, with a background in graphic design.</span>
+        <h1>Hi! I'm Pia.
+          <span>A UX/UI Designer, with a background in graphic design.</span>
         </h1>
         <p>Creating pixel-perfect designs to meet the exact needs of the customer, while also keeping the companies needs in mind.</p>
       </div>
     </div>
 
-    <div id="mywork">
+    <div class="section" id="mywork">
       <div class="container">
         <h2>My Work</h2>
         <!--Project 1 Expat Experts-->
-        <div class="project">
-          <div class="container_project">
+        <div class="row">
+          <div class="column">
             <picture>
               <source srcset="img/experts/Expat600.jpg" media="(max-width:767px)">
               <img src="img/experts/Expat1200.jpg" alt="Expat Experts">
             </picture>
           </div>
-          <div>
+          <div class="column">
             <h3>Expat Experts</h3>
             <p>
               Expat Experts is a responsive web app that offers professional help with the process of moving abroad and settling in to a new country.
             </p>
-            <!--Update link when ready-->
             <a href="expert.html" class="button">Read more</a>
           </div>
         </div>
 
-        <!--Project 1 Chatter-->
-        <div class="project">
-          <div class="container_project">
+        <!--Project 2 Chatter-->
+        <div class="row">
+          <div class="column">
             <picture>
               <source srcset="img/chatter/Chatter600.jpg" media="(max-width:767px)">
               <img src="img/chatter/Chatter1200.jpg" alt="Chatter">
             </picture>
           </div>
-          <div>
+          <div class="column">
             <h3>Chatter</h3>
             <p>
               A vocabulary app to help you learn a new language in an easy, fun and quick way.
@@ -86,37 +85,34 @@
   </main>
 
   <!--Footer-->
-  <footer id="contact">
+  <footer id="footer">
     <div class="container">
-      <h2>Contact Info</h2>
-      <p>
-        To get in touch, please call: <a href="tel:+491234567">+49 1234567</a> or Skype me at <a href="skype:pialett">pialett</a>. Prefer sending an email?
-      </p>
       <div>
-        <a href="mailto:pia.lettenbauer@gmail.com" class="button contact">Email me</a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/pialettenbauer/" target="_blank">
-          <!-- Linkedin icon -->
-          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-            <path d="M512 64c0-35.323-28.677-64-64-64H64C28.677 0 0 28.677 0 64v384c0 35.323 28.677 64 64 64h384c35.323 0 64-28.677 64-64V64z" fill="#2867b2" />
-            <g fill="#fff">
-              <path d="M61.053 178.667h85.76v257.962h-85.76z" />
-              <path
-                d="M104.512 54.28C75.171 54.28 56 73.57 56 98.853c0 24.752 18.588 44.574 47.377 44.574h.554c29.903 0 48.516-19.822 48.516-44.574-.555-25.283-18.611-44.573-47.935-44.573zM357.278 172.601c-45.49 0-65.866 25.017-77.276 42.589v-36.523h-85.738c1.137 24.197 0 257.961 0 257.961h85.737V292.564c0-7.711.554-15.42 2.827-20.931 6.188-15.4 20.305-31.352 43.993-31.352 31.012 0 43.436 23.664 43.436 58.327v138.02h85.741v-147.93c0-79.237-42.305-116.097-98.72-116.097z"
-                fill-rule="nonzero" />
-            </g>
-          </svg>
-        </a>
-        <a href="https://twitter.com/PiaLetten" target="_blank">
-          <!-- Twitter icon -->
-          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
-            <path fill="none" d="M56 56h400v400H56z" />
-            <path
-              d="M161.014 464.013c193.208 0 298.885-160.071 298.885-298.885 0-4.546 0-9.072-.307-13.578A213.737 213.737 0 00512 97.176a209.705 209.705 0 01-60.334 16.527 105.426 105.426 0 0046.182-58.102 210.548 210.548 0 01-66.703 25.498 105.184 105.184 0 00-76.593-33.112c-57.682 0-105.145 47.464-105.145 105.144 0 8.002.914 15.979 2.722 23.773-84.418-4.231-163.18-44.161-216.494-109.752-27.724 47.726-13.379 109.576 32.522 140.226A104.258 104.258 0 0120.48 194.23v1.331c.014 49.814 35.447 93.111 84.275 102.974a104.898 104.898 0 01-47.431 1.802c13.727 42.685 53.311 72.108 98.14 72.95a210.83 210.83 0 01-130.458 45.056A213.688 213.688 0 010 416.827a297.42 297.42 0 00161.014 47.104"
-              fill="#1da1f2" fill-rule="nonzero" />
-          </svg>
-        </a>
+        <ul>
+          <!-- Email -->
+          <li><a href="mailto:pia.lettenbauer@gmail.com" target="_blank">
+            <svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg id="Layer_1" style="enable-background:new 0 0 64 64;" version="1.1" viewBox="0 0 64 64" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+            	.st0{fill:#ebebeb;}
+            	</style>
+            	<g>
+            	  <g id="Icon-Envelope" transform="translate(78.000000, 232.000000)">
+            	    <path class="st0"
+            	      d="M-22.5-213.2l-1.9-1.9l-17.6,17.6c-2.2,2.2-5.9,2.2-8.1,0L-67.7-215l-1.9,1.9l13.1,13.1     l-13.1,13.1l1.9,1.9l13.1-13.1l2.6,2.6c1.6,1.6,3.7,2.5,5.9,2.5s4.3-0.9,5.9-2.5l2.6-2.6l13.1,13.1l1.9-1.9l-13.1-13.1     L-22.5-213.2"
+            	      id="Fill-3" />
+            	    <path class="st0" d="M-26.2-181.6h-39.5c-2.3,0-4.2-1.9-4.2-4.2v-28.2c0-2.3,1.9-4.2,4.2-4.2h39.5     c2.3,0,4.2,1.9,4.2,4.2v28.2C-22-183.5-23.9-181.6-26.2-181.6L-26.2-181.6z M-65.8-215.5c-0.8,0-1.4,0.6-1.4,1.4v28.2     c0,0.8,0.6,1.4,1.4,1.4h39.5c0.8,0,1.4-0.6,1.4-1.4v-28.2c0-0.8-0.6-1.4-1.4-1.4H-65.8L-65.8-215.5z" id="Fill-4"/></g></g></svg>
+          </a></li>
+                <!-- Linkedin -->
+        <li><a href="https://www.linkedin.com/in/pialettenbauer/" target="_blank">
+          <svg PUBLIC '-//W3C//DTD SVG 1.0//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'><svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.0" viewBox="0 0 32 32" width="32px" xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g>
+                <rect fill="#ebebeb" height="23" width="7" y="9" />
+                <path d="M24.003,9C20,9,18.89,10.312,18,12V9h-7v23h7V19c0-2,0-4,3.5-4s3.5,2,3.5,4v13h7V19C32,13,31,9,24.003,9z" fill="#ebebeb" />
+                <circle cx="3.5" cy="3.5" fill="#ebebeb" r="3.5" />
+              </g>
+            </svg>
+        </a></li>
+      </ul>
       </div>
       <p>© Pia Lettenbauer 2021</p>
     </div>

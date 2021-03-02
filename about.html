@@ -16,11 +16,11 @@
 </head>
 
 <body>
-  <header id="menu">
+  <header>
     <div class="container">
-      <a href="index.html">Pia Lettenbauer</a>
+      <a href="index.html" class="logo">Pia Lettenbauer</a>
       <nav>
-        <ul class="megamenu">
+        <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -31,21 +31,21 @@
   <main>
 
     <!--Section Title-->
-    <div id="about">
-      <div>
+    <div class="section" id="about">
+      <div class="container">
         <h1>About</h1>
       </div>
     </div>
     <!--Headshot, Bio, Skills/Tools-->
-    <div>
-      <div>
+    <div class="section" id="bio">
+      <div class="container">
         <picture>
           <source srcset="img/about/pia_small.jpg" media="(max-width:767px)">
           <img src="img/about/pia_large.jpg" alt="My Image">
         </picture>
-        <div>
-          <!--Bio-->
-          <div>
+        <!--Bio-->
+        <div class="row">
+          <div class="column">
             <h2>About me</h2>
             <p>Hi, I’m Pia, a UX/UI designer, with a background in Graphic Design. I am most known for my approach in solving challenging problems by analyzing patterns in behaviors and motives and paying attention to details.<br>
               Curious by nature, I love thinking outside the box to find innovative techniques that connect people with great designs. UX allows me to design solutions that directly correlate with an improved lifestyle. It places the user’s needs
@@ -57,7 +57,7 @@
             <a href="files/resume.pdf" target="_blank" download>Download My Resume</a>
           </div>
           <!--Skills/Tools-->
-          <div>
+          <div class="column">
             <h2>Skills and Tools</h2>
             <div>
               <h3>Skills</h3>
@@ -90,7 +90,7 @@
   </main>
 
   <!--Footer-->
-  <footer id="contact">
+  <footer id="footer">
     <div class="container">
       <h2>Contact Info</h2>
       <p>

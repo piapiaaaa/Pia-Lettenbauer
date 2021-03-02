@@ -1,8 +1,13 @@
 /* colors
 #73c3a3
+#0d142d
 #000000
 #a7a9ac
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Lato', sans-serif;
@@ -12,7 +17,22 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #484848;
+}
+
+main {
+  padding-top: 103px;
+}
+
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+  box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.08);
+  position: fixed
 }
 
 h1, h2, h3, h4 {
@@ -20,25 +40,26 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2em;
   font-weight: 700;
-  color: #73c3a3;
+  text-transform: uppercase;
+  color: #0d142d;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 1.75em;
   font-weight: 700;
   color: #a7a9ac;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: 400;
-  color: #73c3a3;
+  color: #0d142d;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -48,13 +69,13 @@ img {
 
 a {
   color: #000000;
-  text-decoration: none;
+  text-decoration: underline;
   /* No underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #a7a9ac;
+  color: #000000;
 }
 
 a:hover,
@@ -118,4 +139,84 @@ a:active {
 .button.contact:visited {
   /* visited link */
   color: #000000;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#mywork .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #a7a9ac;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero {
+  background-color: #e0f2ec;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+  color: #0d142d;
+}
+
+nav>ul>li>a:visited {
+  font-weight: 300;
+}
+
+nav>ul>li>a:hover {
+  font-weight: 700px;
+}
+
+nav>ul>li>a:active {
+  font-weight: 700px;
+}
+
+
+#footer {
+  background-color: #0d142d;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+  color: #ebebeb;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
