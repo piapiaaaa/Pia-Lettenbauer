@@ -24,7 +24,6 @@ main {
   padding-top: 103px;
 }
 
-
 header {
   background-color: #ffffff;
   text-align: center;
@@ -70,7 +69,6 @@ img {
 a {
   color: #000000;
   text-decoration: underline;
-  /* No underlining */
 }
 
 a:visited {
@@ -103,6 +101,7 @@ a:active {
   border-bottom: 2px solid #ffffff;
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:visited {
@@ -207,8 +206,7 @@ nav>ul>li>a:active {
   font-weight: 700px;
 }
 
-
-#footer {
+#contact {
   background-color: #0d142d;
   padding: 10px 0;
   display: inline-block;
@@ -219,4 +217,27 @@ nav>ul>li>a:active {
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+#hero p {
+  text-align: center;
+}
+
+.social a {
+  color: #c9c9c9;
+  font-size: 2em;
+  padding: 0 0 0 0.5em;
+}
+
+.social a:hover {
+  color: #FFF;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social span {
+  margin-right: auto;
 }
