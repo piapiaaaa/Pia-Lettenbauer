@@ -20,6 +20,10 @@ body {
   color: #484848;
 }
 
+#about-page h3 {
+  margin-top: 0;
+}
+
 main {
   padding-top: 103px;
 }
@@ -29,6 +33,7 @@ header {
   text-align: center;
   width: 100%;
   padding: 10px;
+  margin: auto;
   border-bottom: 1px solid #ebebeb;
   box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.08);
   position: fixed
@@ -46,6 +51,7 @@ h1 {
 }
 
 h2 {
+  text-align: center;
   font-size: 1.75em;
   font-weight: 700;
   color: #a7a9ac;
@@ -55,6 +61,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: #0d142d;
+  margin: 0px;
 }
 
 h4 {
@@ -91,17 +98,14 @@ a:active {
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #73c3a3;
   color: #ffffff;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #ffffff;
-  /* width of the border, type, color */
-  transition: 0.2s opacity;
   text-decoration: none;
+  transition: 0.2s opacity;
 }
 
 .button:visited {
@@ -113,14 +117,14 @@ a:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .button:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .button.contact {
@@ -143,6 +147,9 @@ a:active {
 /* Layout styling */
 .container {
   padding: 0 15px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
@@ -155,9 +162,8 @@ a:active {
   border-bottom: 1px solid #a7a9ac;
 }
 
-#hero h1 {
-  text-align: center;
-  /* Centers text */
+#hero p {
+  font-weight: 400;
 }
 
 #hero {
@@ -165,11 +171,13 @@ a:active {
   padding: 10px 0;
   display: inline-block;
   width: 100%;
+  text-align: center;
 }
 
 .logo {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: Lustria;
 }
 
 nav {
@@ -219,13 +227,9 @@ ul {
   padding: 0;
 }
 
-#hero p {
-  text-align: center;
-}
-
 .social a {
   color: #c9c9c9;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 0 0 0 0.5em;
 }
 
@@ -240,4 +244,223 @@ ul {
 
 .social span {
   margin-right: auto;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+/* For tablet: */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  main {
+    padding-top: 95px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.66%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+/* For laptop: */
+@media only screen and (min-width: 1024px) {
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1440px) {
+
+  .col-xlg-1 {
+    width: 8.33%;
+  }
+
+  .col-xlg-2 {
+    width: 16.66%;
+  }
+
+  .col-xlg-3 {
+    width: 25%;
+  }
+
+  .col-xlg-4 {
+    width: 33.33%;
+  }
+
+  .col-xlg-5 {
+    width: 41.66%;
+  }
+
+  .col-xlg-6 {
+    width: 50%;
+  }
+
+  .col-xlg-7 {
+    width: 58.33%;
+  }
+
+  .col-xlg-8 {
+    width: 66.66%;
+  }
+
+  .col-xlg-9 {
+    width: 75%;
+  }
+
+  .col-xlg-10 {
+    width: 83.33%;
+  }
+
+  .col-xlg-11 {
+    width: 91.66%;
+  }
+
+  .col-xlg-12 {
+    width: 100%;
+  }
 }
