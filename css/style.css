@@ -2,8 +2,10 @@
 #73c3a3
 #0d142d
 #000000
-#a7a9ac
-*/
+#a7a9ac*/
+/*************************************
+Generic:
+*************************************/
 * {
   box-sizing: border-box;
 }
@@ -18,10 +20,6 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #484848;
-}
-
-#about-page h3 {
-  margin-top: 0;
 }
 
 main {
@@ -51,17 +49,18 @@ h1 {
 }
 
 h2 {
-  text-align: center;
+  text-align: left;
   font-size: 1.75em;
   font-weight: 700;
   color: #a7a9ac;
+  margin-left: 10px;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: #0d142d;
-  margin: 0px;
+  margin: 0px 0px 15px;
 }
 
 h4 {
@@ -73,6 +72,13 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 0;
+}
+
+/*************************************
+Links:
+*************************************/
 a {
   color: #000000;
   text-decoration: underline;
@@ -106,6 +112,7 @@ a:active {
   border-bottom: 2px solid #ffffff;
   text-decoration: none;
   transition: 0.2s opacity;
+  margin: 10px auto;
 }
 
 .button:visited {
@@ -118,6 +125,7 @@ a:active {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
   font-weight: 400;
+  color: #000;
 }
 
 .button:active {
@@ -144,7 +152,13 @@ a:active {
   color: #000000;
 }
 
-/* Layout styling */
+/*************************************
+Container, Rows, Columns:
+*************************************/
+#about-page h3 {
+  margin-top: 0;
+}
+
 .container {
   padding: 0 15px;
   max-width: 1200px;
@@ -164,6 +178,9 @@ a:active {
 
 #hero p {
   font-weight: 400;
+  max-width: 800px;
+  margin: 1.5em auto;
+  font-size: 18px;
 }
 
 #hero {
@@ -183,6 +200,7 @@ a:active {
 nav {
   display: inline-block;
   width: 100%;
+  margin: 0;
 }
 
 nav>ul {
@@ -246,32 +264,56 @@ ul {
   margin-right: auto;
 }
 
-[class*="col-"] {
-  float: left;
-  padding: 0px 10px;
-}
-
 .row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+#mywork .row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
 
+#about h1 {
+  margin-left: 10px;
+}
+
+/*************************************
+Animation:
+*************************************/
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .sun {
@@ -286,12 +328,24 @@ ul {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+svg.berlin-illustration {
+  width: 100%
+}
 
-/* For tablet: */
+
+
+/*************************************
+Media queries:
+*************************************/
+[class*="col-"] {
+  float: left;
+  padding: 0px 10px;
+}
+
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 20px 0 20px;
   }
 
   nav {
@@ -302,14 +356,23 @@ ul {
 
   .logo {
     font-size: 24px;
+    margin-left: 10px;
   }
 
   main {
-    padding-top: 95px;
+    padding-top: 79px;
   }
 
   body {
     font-size: 18px;
+  }
+
+  header ul {
+    margin: 0px;
+  }
+
+  #hero p {
+    font-size: 20px;
   }
 
   .col-md-1 {
@@ -364,6 +427,8 @@ ul {
 /* For laptop: */
 @media only screen and (min-width: 1024px) {
 
+
+
   .col-lg-1 {
     width: 8.33%;
   }
@@ -411,11 +476,11 @@ ul {
   .col-lg-12 {
     width: 100%;
   }
+
 }
 
 /* For desktop: */
 @media only screen and (min-width: 1440px) {
-
   .col-xlg-1 {
     width: 8.33%;
   }
