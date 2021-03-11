@@ -3,7 +3,6 @@
 #0d142d
 #000000
 #a7a9ac*/
-
 /*************************************
 Generic:
 *************************************/
@@ -20,7 +19,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #484848;
+  color: #0d142d;
 }
 
 main {
@@ -39,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75em;
+  font-size: 3em;
   font-weight: 700;
   color: #a7a9ac;
   margin-left: 10px;
@@ -49,7 +48,7 @@ h3 {
   font-size: 1.5em;
   font-weight: 400;
   color: #0d142d;
-  margin: 15px 0px 6px;
+  margin: 20px 0px 0px;
 }
 
 h4 {
@@ -61,6 +60,9 @@ img {
   width: 100%;
 }
 
+p {
+  margin: 10px 0px;
+}
 
 /*************************************
 Header:
@@ -139,18 +141,17 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #000000;
+  color: #000;
   font-weight: 700;
 }
 
 .button {
   display: inline-block;
   background-color: #73c3a3;
-  color: #ffffff;
+  color: #fff;
   font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #ffffff;
+  padding: 8px 20px 8px 20px;
+  border-radius: 7px;
   text-decoration: none;
   transition: 0.2s opacity;
   margin: 10px auto;
@@ -158,7 +159,7 @@ a:active {
 
 .button:visited {
   /* visited link */
-  color: #ffffff;
+  color: #fff;
 }
 
 .button:hover {
@@ -176,21 +177,26 @@ a:active {
   font-weight: 400;
 }
 
-.button.contact {
+#prototype {
+  text-align: center;
+}
+
+.button.prototype {
+  color: #0d142d;
   background-color: transparent;
-  color: #73c3a3;
-  text-transform: uppercase;
-  border: 2px solid #000000;
+  border: 1px solid #ebebeb;
+  transition: 0.8s opacity;
+  margin: 0 auto;
 }
 
-.button.contact:hover {
-  background-color: #73c3a3;
-  color: #ffffff;
+.button.prototype:hover {
+  background-color: #ebebeb;
+  color: #fff;
 }
 
-.button.contact:visited {
+.button.prototype:visited {
   /* visited link */
-  color: #000000;
+  color: #0d142d;
 }
 
 /*************************************
@@ -240,6 +246,14 @@ Container, Rows, Columns:
   color: #ebebeb;
 }
 
+.divider {
+  background-color: #e0f2ec;
+  padding: 10px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -284,15 +298,20 @@ ul {
 }
 
 .section {
-  padding: 0 0 45px;
+  padding: 0 0 35px;
 }
 
 #about-page .section {
   padding: 0px;
 }
 
+.header {
+  padding: 0px;
+}
 
-
+#Layer_1 {
+  width: 100%;
+}
 
 /*************************************
 Animation:
@@ -347,8 +366,6 @@ svg.berlin-illustration {
   width: 100%
 }
 
-
-
 /*************************************
 Media queries:
 *************************************/
@@ -358,7 +375,6 @@ Media queries:
 }
 
 @media only screen and (min-width: 640px) {
-
   .col-md-1 {
     width: 8.33%;
   }
@@ -438,13 +454,10 @@ Media queries:
   #hero p {
     font-size: 22px;
   }
-
 }
 
 /* For laptop: */
 @media only screen and (min-width: 1024px) {
-
-
   .col-lg-1 {
     width: 8.33%;
   }
@@ -498,16 +511,22 @@ Media queries:
   }
 
   #hero {
-  padding: 40px 0;
+    padding: 45px 0;
   }
 
   body {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  #project-page h2, #project-page h3, #project-page p {
-    max-width: 800px;
+  .divider {
+    padding: 50px 0;
   }
+
+  #project {
+    width: 70%;
+    margin: auto;
+  }
+
 
 }
 
