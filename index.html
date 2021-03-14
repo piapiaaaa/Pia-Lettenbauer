@@ -8,6 +8,15 @@
   <link href="img/favicon.ico" rel="shortcut icon">
   <!--Remove all styles-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F8C4EL31S9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8C4EL31S9');
+</script>
   <!--Fonts selection-->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -19,16 +28,19 @@
 
 <body id="home-page">
   <header>
-    <div class="container">
-      <a href="index.html" class="logo">Pia Lettenbauer</a>
-      <nav>
+      <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Pia Lettenbauer</a>
+        <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
   <main>
     <!--Hero Section-->
@@ -46,8 +58,8 @@
         <div class="row">
           <div class="column col-md-6 col-lg-7">
             <picture>
-              <source srcset="img/experts/Expat600.jpg" media="(max-width:767px)">
-              <img src="img/experts/Expat1200.jpg" alt="Expat Experts">
+              <source srcset="img/experts/expatsmall.png" media="(max-width:767px)">
+              <img src="img/experts/expatlarge.png" alt="Expat Experts">
             </picture>
           </div>
           <div class="column col-md-6 col-lg-5">

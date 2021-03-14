@@ -23,7 +23,7 @@ body {
 }
 
 main {
-  padding-top: 90px;
+  padding-top: 53px;
 }
 
 h1, h2, h3, h4 {
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.75em;
   font-weight: 700;
   color: #a7a9ac;
   margin-left: 10px;
@@ -54,6 +54,8 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-weight: 400;
+    margin: 20px 0px 0px;
+    color: #73c3a3;
 }
 
 img {
@@ -69,7 +71,6 @@ Header:
 *************************************/
 header {
   background-color: #ffffff;
-  text-align: center;
   width: 100%;
   padding: 10px;
   margin: auto;
@@ -80,24 +81,14 @@ header {
 
 .logo {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-family: Lustria;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-  margin: 0;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -118,6 +109,15 @@ nav>ul>li>a:hover {
 
 nav>ul>li>a:active {
   font-weight: 700px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 /*************************************
@@ -199,6 +199,40 @@ a:active {
   color: #0d142d;
 }
 
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+text-align: right;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 /*************************************
 Container, Rows, Columns:
 *************************************/
@@ -254,10 +288,6 @@ Container, Rows, Columns:
   text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 .social a {
   color: #c9c9c9;
@@ -312,6 +342,7 @@ ul {
 #Layer_1 {
   width: 100%;
 }
+
 
 /*************************************
 Animation:
@@ -369,12 +400,32 @@ svg.berlin-illustration {
 /*************************************
 Media queries:
 *************************************/
-[class*="col-"] {
-  float: left;
-  padding: 0px 10px;
-}
 
 @media only screen and (min-width: 640px) {
+
+  nav>ul>li {
+    min-width: 641px
+    display: inline-block;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0px 20px;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+  .small-section .row {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
   .col-md-1 {
     width: 8.33%;
   }
@@ -519,10 +570,10 @@ Media queries:
   }
 
   .divider {
-    padding: 50px 0;
+    padding: 60px 0;
   }
 
-  #project {
+  .small-section {
     width: 70%;
     margin: auto;
   }
