@@ -54,8 +54,8 @@ h3 {
 h4 {
   font-size: 1.25em;
   font-weight: 400;
-    margin: 20px 0px 0px;
-    color: #73c3a3;
+  margin: 20px 0px 0px;
+  color: #73c3a3;
 }
 
 img {
@@ -116,7 +116,7 @@ ul {
   padding: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
@@ -215,23 +215,23 @@ a:active {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
-text-align: right;
+  text-align: right;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
-
 
 /*************************************
 Container, Rows, Columns:
@@ -288,7 +288,6 @@ Container, Rows, Columns:
   text-align: center;
 }
 
-
 .social a {
   color: #c9c9c9;
   font-size: 1.5em;
@@ -342,7 +341,6 @@ Container, Rows, Columns:
 #Layer_1 {
   width: 100%;
 }
-
 
 /*************************************
 Animation:
@@ -400,12 +398,9 @@ svg.berlin-illustration {
 /*************************************
 Media queries:
 *************************************/
-
 @media only screen and (min-width: 640px) {
-
   nav>ul>li {
-    min-width: 641px
-    display: inline-block;
+    min-width: 641px display: inline-block;
   }
 
   [class*="col-"] {
@@ -414,12 +409,12 @@ Media queries:
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .small-section .row {
     margin-left: -20px;
@@ -577,8 +572,6 @@ Media queries:
     width: 70%;
     margin: auto;
   }
-
-
 }
 
 /* For desktop: */
