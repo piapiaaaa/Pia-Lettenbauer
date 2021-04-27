@@ -221,12 +221,12 @@ a:active {
 }
 
 .navtoggle.responsive nav {
-  padding: 0;
+  padding: 30px 0 0;
 }
 
 .navtoggle.responsive li {
   display: block;
-  padding: 0;
+  padding: 15px 0;
 }
 
 .navtoggle.responsive li:last-child {
@@ -491,6 +491,15 @@ Media queries:
   [class*="col-"] {
     float: left;
     padding: 0px 20px;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 0;
   }
 
   .navtoggle li:not(:last-child) {
